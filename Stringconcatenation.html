@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        let greeting = "hello";
+        let name = "world";
+        let combinedString = greeting+ " "+name;
+        //alert
+        window.alert(combinedString)
+
+        //repalce Characters
+        let replaceString =combinedString.replaceAll('l','1').replaceAll('o','0');
+        document.writeln(replaceString);
+        
+        //reverse String
+
+        function reverseString(combinedString){
+            let splitString = combinedString.split('');
+
+            let reverseString1 = splitString.reverse().join('');
+
+            return reverseString1;
+
+        }
+
+        let resultReverseString = reverseString(combinedString);
+
+
+        document.writeln('<br>');
+
+        document.writeln(resultReverseString);
+    
+    
+    
+    </script>
+</body>
+</html>
